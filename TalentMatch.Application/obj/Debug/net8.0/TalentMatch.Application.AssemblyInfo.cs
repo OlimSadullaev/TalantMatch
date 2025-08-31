@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TalentMatch.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5db201d644b87ef4b90f982846faddff3734f33f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59bc5c596618ed95a2e5207b92c2ca41d8b3a2c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("TalentMatch.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TalentMatch.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
