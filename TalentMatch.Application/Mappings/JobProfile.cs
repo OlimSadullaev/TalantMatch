@@ -8,8 +8,8 @@ namespace TalentMatch.Application.Mappings
     {
         public JobProfile()
         {
-            CreateMap<Job, CreateJobRequest>();
-            CreateMap<CreateJobRequest, Job>();
+            CreateMap<Job, CreateJobRequestModel>();
+            CreateMap<CreateJobRequestModel, Job>();
         }
     }
 }

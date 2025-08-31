@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace TalentMatch.Application.DTOs
 {
-    public class CreateJobRequest
+    public class CreateJobRequestModel
     {
+        public Guid Id { get; set; }
         [Required]
         public string Title { get; set; }
 
@@ -22,6 +23,8 @@ namespace TalentMatch.Application.DTOs
         public string About_Us { get; set; }
         public string Benefits { get; set; }
         public string Location { get; set; }
+        public double FitScore { get; set; }
+        public DateTime PostedDate { get; set; } = DateTime.UtcNow;
 
         [Required]
         public Guid RecruiterId { get; set; }
