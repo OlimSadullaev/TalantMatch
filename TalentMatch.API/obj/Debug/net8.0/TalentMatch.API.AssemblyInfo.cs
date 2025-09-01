@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TalentMatch.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd1f643fec4b99cc19f4a9dd20c41b5245b755e9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c83911cedb2bf621616ef5aa8f26c4faa956a9e")]
 [assembly: System.Reflection.AssemblyProductAttribute("TalentMatch.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TalentMatch.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
