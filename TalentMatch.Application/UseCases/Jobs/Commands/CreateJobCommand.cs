@@ -14,7 +14,7 @@ namespace TalentMatch.Application.UseCases.Jobs.Commands
 {
     public class CreateJobCommand : ICommand<Unit>
     {
-        public CreateJobRequest Job { get; set; }   
+        public CreateJobRequestModel Job { get; set; }   
     }
 
     public class CreateJobCommandHandler : ICommandHandler<CreateJobCommand, Unit>
