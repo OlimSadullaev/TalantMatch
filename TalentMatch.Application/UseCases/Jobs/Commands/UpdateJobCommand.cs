@@ -20,21 +20,21 @@ namespace TalentMatch.Application.UseCases.Jobs.Commands
             this.job = job;
         }
     }
-
+    
     public class UpdateJobCommandHandler : ICommandHandler<UpdateJobCommand, Unit>
     {
-        private readonly IApplicationDbContext dbContext;
+        private readonly IApplicationDbContext context;
         private readonly IMapper mapper;
 
-        public UpdateJobCommandHandler(IApplicationDbContext dbContext, IMapper mapper)
+        public UpdateJobCommandHandler(IApplicationDbContext context, IMapper mapper)
         {
-            this.dbContext = dbContext;
+            this.context = context;
             this.mapper = mapper;
         }
 
         public async Task<Unit> Handle(UpdateJobCommand request, CancellationToken cancellationToken)
         {
-            var job = await dbContext.Jobs
+            var job = await context.Jobs
                 .FirstOrDefaultAsync(j => j.Id == request.job.Id, cancellationToken);
 
             if (job == null)
@@ -48,7 +48,7 @@ namespace TalentMatch.Application.UseCases.Jobs.Commands
             job.Benefits = request.job.Benefits;
             job.Location = request.job.Location;
 
-            await dbContext.SaveChangesAsync(cancellationToken);
+            await context.SaveChangesAsync(cancellationToken);
 
             return Unit.Value;
         }

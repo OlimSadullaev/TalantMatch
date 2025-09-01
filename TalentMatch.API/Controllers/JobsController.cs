@@ -45,5 +45,23 @@ namespace TalentMatch.API.Controllers
             var jobId = await mediator.Send(command);
             return CreatedAtAction(nameof(CreateJobRequestModel), new { id = jobId }, null);
         }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateJob(Guid id, UpdateJobRequestModel request)
+        {
+            if (id != request.Id) return BadRequest();
+
+            var command = new UpdateJobCommand(request);
+            await mediator.Send(command);
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteJob(Guid id)
+        {
+            var command = new DeleteJobCommand(id);
+            await mediator.Send(command);
+            return NoContent();
+        }
     }
 }
