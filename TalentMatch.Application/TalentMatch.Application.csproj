@@ -19,8 +19,4 @@
     <ProjectReference Include="..\TalentMatch.Domain\TalentMatch.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="UseCases\JobApplication\Command\" />
-  </ItemGroup>
-
 </Project>
