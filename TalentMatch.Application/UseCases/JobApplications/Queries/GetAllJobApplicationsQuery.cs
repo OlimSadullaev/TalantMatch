@@ -6,7 +6,7 @@ using TalentMatch.Application.UseCases.JobApplications.Command;
 
 namespace TalentMatch.Application.UseCases.JobApplications.Queries
 {
-    public class GetAllJobApplicationsQuery : IQuery<List<CreateJobApplicationRequestModel>>
+    public class GetAllJobApplicationsQuery : IQuery<List<JobApplicationResponseModel>>
     {
     }
 

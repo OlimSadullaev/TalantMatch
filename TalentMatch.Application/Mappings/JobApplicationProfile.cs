@@ -15,7 +15,6 @@ namespace TalentMatch.Application.Mappings
         {
             CreateMap<JobApplication, JobApplicationResponseModel>();
             CreateMap<CreateJobApplicationRequestModel, JobApplication>();
-            CreateMap<UpdateJobApplicationRequestModel, JobApplication>();
         }
     }
 }
