@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TalentMatch.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf0a51a658609a702f5612ac5143096e868ed44f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e63100308e4128cc794fb796e73aab5d3ddd313")]
 [assembly: System.Reflection.AssemblyProductAttribute("TalentMatch.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TalentMatch.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
