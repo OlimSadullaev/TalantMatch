@@ -19,7 +19,6 @@ namespace TalentMatch.API.Controllers
             this.mediator = mediator;
         }
 
-        [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetJobById(Guid id)
         {
@@ -42,7 +41,6 @@ namespace TalentMatch.API.Controllers
             return Ok(result);
         }
 
-        [Authorize]
         [HttpPost]
         public async Task<IActionResult> CreateJob(CreateJobCommand command)
         {
@@ -50,7 +48,6 @@ namespace TalentMatch.API.Controllers
             return CreatedAtAction(nameof(CreateJobRequestModel), new { id = jobId }, null);
         }
 
-        [Authorize]
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateJob(Guid id, UpdateJobRequestModel request)
         {
@@ -61,7 +58,6 @@ namespace TalentMatch.API.Controllers
             return NoContent();
         }
 
-        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteJob(Guid id)
         {
